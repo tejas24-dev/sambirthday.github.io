@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <title>Happy Birthday Sam </title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+        @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+
+        body {
+            
+            background: #fde3a7;
+            /*CAPE HONEY*/
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ::selection {
+            background: transparent;
+        }
+
+        h4 {
+            font-size: 26px;
+            line-height: 1px;
+            font-family: "Amatic SC", cursive !important;
+        }
+
+        .color1 {
+            color: #1bbc9b;
+        }
+
+        /*MOUNTAIN MEADOW*/
+
+        .color2 {
+            color: #c0392b;
+            /*TALL POPPY*/
+        }
+
+        .margin {
+            margin-bottom: 30px;
+        }
+
+        .card {
+		    font-family: "Indie Flower", cursive !important;
+            color: #013243;
+            /*SHERPA BLUE*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 400px;
+            background: #e0e1dc;
+            transform-style: preserve-3d;
+            transform: translate(-50%, -50%) perspective(2000px);
+            box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5),
+            20px 0 60px rgba(0, 0, 0, 0.5);
+            transition: 1s;
+        }
+
+        .card:hover {
+            transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
+            box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5),
+            0 10px 100px rgba(0, 0, 0, 0.5);
+        }
+
+        .card:before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #bac1ba;
+            transform-origin: bottom;
+            transform: skewX(-45deg);
+        }
+
+        .card:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -5px;
+            width: 5px;
+            height: 100%;
+            background: #92a29c;
+            transform-origin: left;
+            transform: skewY(-45deg);
+        }
+
+        .card .imgBox {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-origin: left;
+            transition: 0.7s;
+        }
+
+        .card .bark {
+            position: absolute;
+            background: #e0e1dc;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: 0.7s;
+        }
+
+        .card .imgBox img {
+            min-width: 250px;
+            max-height: 400px;
+        }
+
+        .card:hover .imgBox {
+            transform: rotateY(-135deg);
+        }
+
+        .card:hover .bark {
+            opacity: 1;
+            transition: 0.6s;
+            box-shadow: 300px 200px 100px rgba(0, 0, 0, 0.4) inset;
+        }
+
+        .card .details {
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding: 0 0 0 10px;
+            z-index: -1;
+            margin-top: 10px;
+        }
+
+        .card .details p {
+            font-size: 14px;
+            line-height: 4px;
+            transform: rotate(-10deg);
+            padding: 0 0 0 20px;
+        }
+
+        .card .details h4 {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+		
+		$("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+		
+#copyright {
+        font-family: "Montserrat", sans-serif;
+      }
+      #copyright a {
+        text-decoration: none;
+      }
+      #copyright a:hover {
+        
+        color: royalblue;
+      }		
+		
+button {border-radius: 20px;}
+button{
+text:sans-serif;
+background-color:blue;
+color:white;
+height:40px;
+width:200px;}
+
+		
+    </style>
+</head>
+
+<body onload="loadImage()">
+<center>
+<img class="img-responsive" width="307" height="240" src="public/ballon.gif" onload="loadImage()" >
+</center>
+
+    <div class="card">
+        <div class="imgBox">
+            <div class="bark"></div>
+            <img src="public/portada.jpg">
+        </div>
+        <div class="details">
+            <h4 class="color1">SAM</h4><br>
+            <h4 class="color2 margin">Wish You Very Happy Birthday...</h4>
+            <p>S-Sweet</p>
+             <p>H-Honest</p>
+              
+			<p>U-UNIQUE</p>
+			<p>B-BRILLIANT</p>
+             <p>H-HANDSOME</p>
+			 <p>A-ADORABLE</p>
+              <p>M-MATURE</p>
+			  <p>You are the perfect combination of your</p>
+                <p>name...</p> 
+				
+                    <p>WISH YOU A VERY HAPPY BIRTHDAY... </p>
+					<p>ENJOY YOUR DAY...</p>
+
+
+			
+            <p class="text-right">♥ With love</p>
+			
+        </div><br><br>
+		<div class="columns" >
+				<div class="column is-12" id="copyright">
+		<div class="card-footer text-center" style="postion:fixed"> 
+              
+             
+              
+              
+            <button><a href="birthdaysam/videosam/video.html"> 
+                GO TO NEXT PAGE
+            </button> 
+			</div>
+			</div>
+
+              
+            
+        </div>
+		</div>
+    
+	
+	
+	 
+</body>
+
+</html>
